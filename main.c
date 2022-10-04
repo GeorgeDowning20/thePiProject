@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <math.h>
 
+float mpg(float miles, float liters);   // function prototype
+double estimate_pi(int n);  //  function prototype
+double monte_carlo_pi(int n);   // function prototype
+
 
 //function to calulate mile per gallon using miles traveled and liters of gas used
 float mpg(float miles, float liters) //task 1
@@ -14,29 +18,33 @@ float mpg(float miles, float liters) //task 1
 //function to estimate the value of pi using a power series method with n itterations
 double estimate_pi(int n)   //task A
 {
-    double pi = 0;
-    for(int i = 0; i < n; i++){
-        pi += 4.0 * (pow(-1, i) / (2 * i + 1));
+    double pi = 0;  //initialize pi
+    for(int i = 0; i < n; i++){ //itterate n times
+        pi += 4.0 * (pow(-1, i) / (2 * i + 1)); //calculate pi using power series method
     }
-    return pi;
+    return pi;  //return pi
 }
 
 //function to approximate the value of pi using the monte carlo method with n points
 double monte_carlo_pi(int n) //task B 
 {
-    int i;
+    //initialize variables
+    int i;  
     int count = 0;
     double x, y, z, pi;
+
+    //generate n random points and count how many are inside the circle
     for (i = 0; i < n; i++)
     {
-        x = (double)rand() / RAND_MAX;
-        y = (double)rand() / RAND_MAX;
-        z = x * x + y * y;
-        if (z <= 1)
-            count++;
+        x = (double)rand() / RAND_MAX;  //generate random x coordinate
+        y = (double)rand() / RAND_MAX;  //generate random y coordinate
+        z = x * x + y * y;  //calculate distance from origin
+        if (z <= 1)     //if the point is inside the circle (distance to origin is less than 1)
+            count++;    //increment count
     }
-    pi = (double)count / n * 4;
-    return pi;
+
+    pi = (double)count / n * 4; //pi is the ratio of points inside the circle to total points times 4
+    return pi; //return pi
 }
 
 int main (void)
