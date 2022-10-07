@@ -6,7 +6,6 @@ float mpg(float miles, float liters);   // function prototype
 double estimate_pi(int n);  //  function prototype
 double monte_carlo_pi(int n);   // function prototype
 
-
 //function to calulate mile per gallon using miles traveled and liters of gas used
 float mpg(float miles, float liters) //task 1
 {
@@ -29,14 +28,13 @@ double estimate_pi(int n)   //task A
 double monte_carlo_pi(int n) //task B 
 {
     //initialize variables
-    int i;  
     int count = 0;
     double x, y, z, pi;
 
     //generate n random points and count how many are inside the circle
-    for (i = 0; i < n; i++)
+    for (int idx = 0; idx < n; idx++)
     {
-        x = (double)rand() / RAND_MAX;  //generate random x coordinate
+        x = (double)rand() / RAND_MAX;  ///generate random x coordinate
         y = (double)rand() / RAND_MAX;  //generate random y coordinate
         z = x * x + y * y;  //calculate distance from origin
         if (z <= 1)     //if the point is inside the circle (distance to origin is less than 1)
