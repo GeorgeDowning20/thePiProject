@@ -12,6 +12,7 @@
 //-------------------------------------------------------------
 //              Preprocessor directives
 //-------------------------------------------------------------
+#pragma once // include guard
 
 #include <stdio.h>  // printf and friends
 #include <stdlib.h> // access to rand functions
@@ -40,5 +41,5 @@ enum status // create an enum called status
 // @date: 10-10-2022
 // @version: 1.0
 // @language: c
-// @requires: stdio.h, stdlib.h and status enum
+// @requires: stdio.h, stdlib.h and main.h
 enum status get_monte_carlo_pi(int n, double *pi); // function prototype
