@@ -15,7 +15,7 @@
 //                  function definitions
 //-------------------------------------------------------------
 
-enum status get_monte_carlo_pi(int n, double *pi) // task B
+static enum status get_monte_carlo_pi(const int n, double *const pi) // task B
 {
     // reject invalid arguments
     if (n < 100)      // if n is less than 100

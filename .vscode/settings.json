@@ -6,6 +6,7 @@
         "error_t.h": "c",
         "stddef.h": "c",
         "errno-base.h": "c",
-        "stdnoreturn.h": "c"
+        "stdnoreturn.h": "c",
+        "stdio.h": "c"
     }
 }

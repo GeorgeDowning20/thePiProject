@@ -42,4 +42,4 @@ enum status // create an enum called status
 // @version: 1.0
 // @language: c
 // @requires: stdio.h, stdlib.h and main.h
-enum status get_monte_carlo_pi(int n, double *pi); // function prototype
+static enum status get_monte_carlo_pi(const int n, double *const pi); // function prototype
