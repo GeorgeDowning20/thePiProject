@@ -1,5 +1,5 @@
 //-------------------------------------------------------------
-//@path: main.c
+//@path: main.h
 //@author: G. Downing
 //@created on: 10-10-2022
 //@last modified: 10-10-2022
