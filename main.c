@@ -18,8 +18,8 @@
 enum status get_monte_carlo_pi(int n, double *pi) // task B
 {
     // reject invalid arguments
-    if (n < 100)        // if n is less than 100
-        return ERROR;   // return ERROR code to be handled in main
+    if (n < 100)      // if n is less than 100
+        return ERROR; // return ERROR code to be handled in main
 
     // initialize local variables
     int count = 0;  // initialize count to 0
