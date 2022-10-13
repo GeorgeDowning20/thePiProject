@@ -12,6 +12,7 @@
 //-------------------------------------------------------------
 //              Preprocessor directives
 //-------------------------------------------------------------
+
 #pragma once // include guard
 
 #include <stdio.h>  // printf and friends
