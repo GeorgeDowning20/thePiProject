@@ -7,4 +7,4 @@ Settings -> Compiler -> Linker settings (tab) -> other linker options ->
 there, write -lm
 
 For terminal:
-add -lm as a build argument.  
+add -lm as a linker argument.  
