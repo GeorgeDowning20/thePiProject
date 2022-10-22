@@ -22,7 +22,7 @@
 //              data types and structures
 //-------------------------------------------------------------
 
-enum status // create an enum called status
+const enum status // create an enum called status
 {
     SUCCESS, // set SUCCESS to 0
     FAILURE, // set FAILURE to 1
@@ -40,7 +40,5 @@ enum status // create an enum called status
 // @return: status of function (SUCCESS or ERROR)
 // @author: G. Downing
 // @date: 10-10-2022
-// @version: 1.0
-// @language: c
 // @requires: stdio.h, stdlib.h and main.h
 static enum status get_monte_carlo_pi(const int n, double *const pi); // function prototype

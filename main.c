@@ -9,7 +9,7 @@
 //@Description: function to estimate to value of pi using the monte carlo method
 //-------------------------------------------------------------
 
-#include "main.h"
+#include "main.h"   // include main.h header file (contains function prototypes and data types)
 
 //-------------------------------------------------------------
 //                  function definitions
@@ -51,8 +51,6 @@ static enum status get_monte_carlo_pi(const int n, double *const pi) // task B
 // @return: 0
 // @author: G. Downing
 // @date: 10-10-2022
-// @version: 1.0
-// @language: c
 // @requires: stdio.h, stdlib.h and status enum
 int main(void)
 {
