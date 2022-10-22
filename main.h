@@ -22,7 +22,7 @@
 //              data types and structures
 //-------------------------------------------------------------
 
-const enum status // create an enum called status
+enum status // create an enum called status
 {
     SUCCESS, // set SUCCESS to 0
     FAILURE, // set FAILURE to 1
